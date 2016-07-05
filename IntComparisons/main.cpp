@@ -6,10 +6,34 @@
 //  Copyright © 2016 Brent Perry. All rights reserved.
 //
 
-#include <iostream>
+#include "../../../std_lib_facilities.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main()
+{
+    int val1, val2;
+    int small, large, sum, difference, product, ratio;
+    
+    cout << "Please enter two whole numbers, separated by a space: ";
+    cin >> val1 >> val2;
+    
+    if (val1 < val2) {
+        small = val1;
+        large = val2;
+    } else {
+        small = val2;
+        large = val1;
+    }
+    
+    sum = val1 + val2;
+    difference = large - small;
+    product = val1 * val2;
+    ratio = large / small;
+    
+    cout << "Thanks!\nThe smaller of the two numbers is " << small << ".\n";
+    cout << "The larger of the two numbers is " << large << ".\n";
+    cout << "The sum of the two numbers is " << sum << ".\n";
+    cout << "The difference between the two numbers is " << difference << ".\n";
+    cout << "The product of the two numbers is " << product << ".\n";
+    cout << "The ratio of the two numbers is " << ratio << ":1.\n";
+    
 }
