@@ -10,10 +10,10 @@
 
 int main()
 {
-    int val1, val2;
-    int small, large, sum, difference, product, ratio;
+    double val1, val2;
+    double small, large, sum, difference, product, ratio;
     
-    cout << "Please enter two whole numbers, separated by a space: ";
+    cout << "Please enter two decimal numbers, separated by a space: ";
     cin >> val1 >> val2;
     
     if (val1 < val2) {
